@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'car_showcase/car_showcase_screen.dart';
+import 'music_player/music_player_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Car Website',
+      title: 'UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.nunitoTextTheme(Theme.of(context).textTheme),
+        brightness: Brightness.dark,
+        primarySwatch: Colors.purple,
       ),
-      home: const CarShowcaseScreen(),
+      home: const MusicPlayerScreen(),
     );
   }
 }
