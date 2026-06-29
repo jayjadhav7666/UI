@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'music_player/music_player_screen.dart';
+import 'primo_web/primo_web_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'UI',
+      title: 'Primo Web',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.purple,
-      ),
-      home: const MusicPlayerScreen(),
+      theme: ThemeData(brightness: Brightness.light, fontFamily: 'Montserrat'),
+      home: const PrimoWebScreen(),
     );
   }
 }
